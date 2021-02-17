@@ -17,6 +17,8 @@ ul li a{
     padding: 8px 20px;
     margin: 5px;
     color: white;
+    font-size: 25px;
+
     text-decoration: none;
     font-weight: bold;
 }
@@ -49,8 +51,9 @@ li {
   
     h1{
         font-size: 3rem;
+        color: white;
     }
-    h3{
+    h2{
         font-size: 1rem;
         color: red;
     }
@@ -59,7 +62,7 @@ li {
     h1{
         font-size: 1.5rem;
     }
-    h3{
+    h2{
         font-size: 0.2rem;
         color: red;
     }
@@ -67,13 +70,82 @@ li {
 
 #projects{
     background-color: #45567d;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    text-align: center;
-    padding: 10px;
+ 
     
 }
-#projects h1{
-display: inherit;
-    border-bottom:2px solid #181719;
+#projects h2{
+    display: inherit;
+    color: white;
+    text-align: center;
+    width: 53vw;
+    margin: auto;
+    font-size: 20px;
+    padding: 19px 0px;
+    border-bottom: 7px solid #ffffff;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.card{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    /* margin-bottom: 6rem; */
+}
+.card a{
+    text-decoration: none;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.card a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.project-title{
+    border-radius: 9px;
+    margin-top: -4px;
+    padding: 7px;
+    padding: -5px;
+    /* background-color: rgb(231, 230, 229); */
+    text-align: center;
+
+}
+
+.project {
+    /* background: var(--main-gray); */
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+}
+.project-image {
+    height: calc(100% - 2.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+.btn{
+    background: black;
+    margin: 15px auto;
+    width: 100px;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+#link{
+    background-color: #181719;
+    height: 80vh;
+    width: 100%;
+}
+#link h1 , #link h3{
+    text-align: center;
+    color: white;
+    padding: 7px;
 }
