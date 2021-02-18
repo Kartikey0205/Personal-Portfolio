@@ -2,9 +2,13 @@
     margin: 0px;
     padding: 0px;
 }
+nav{
+
+    position: fixed;
+    width: 100%;
+}
 ul{
     padding: 20px;
-    position: fixed;
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -22,7 +26,7 @@ ul li a{
     text-decoration: none;
     font-weight: bold;
 }
-a:hover{
+ul li a:hover{
 background-color: antiquewhite;
 color: #181719;
 border-radius: 20px;
@@ -54,9 +58,22 @@ li {
         color: white;
     }
     h2{
-        font-size: 1rem;
+        font-size: 1.6rem;
         color: red;
     }
+    /* iphone */
+    @media only screen and (max-width:600px){
+    
+        h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.2rem;
+            color: red;
+        }
+    }
+    
+    /* phone */
 @media only screen and (max-width:450px){
     
     h1{
@@ -141,11 +158,114 @@ li {
 }
 #link{
     background-color: #181719;
-    height: 80vh;
+    /* height: 75vh; */
+    height: 50vh;
+
     width: 100%;
+    text-align: center;
 }
 #link h1 , #link h3{
     text-align: center;
     color: white;
     padding: 7px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* max-width: 980px; */
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+.contact-links a{
+    text-decoration: none;
+    color: white;
+}
+.contact-details {
+    background: none;
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+.contact-details:hover,.contact-details a:hover{
+    transition: transform  0.3s ease-out;
+    transform: scaleX(0.5);
+    background: none;
+}
+.btn2{
+    padding: 32px;
+
+}
+@media only screen and (max-width:600px){
+ 
+    .contact-links{
+        margin-top: 1.8rem;
+    }
+        .btn2{
+            padding: 5px;
+        
+        }
+        .contact-details {
+            /* background: none; */
+            font-size: 1.6rem;
+            /* text-shadow: 2px 2px 1px #1f1f1f; */
+        }
+}
+
+#ft{
+    background-color: rgb(24, 23, 25);
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    
+}
+#ft p {
+padding:0px 60px;
+font-size: 20px;
+}
+@media only screen and (max-width:450px){
+    #ft p {
+        padding:0px 40px;
+        font-size: 18px;
+        }
+
+}
+
+
+@media only screen and (max-width:550px){
+
+#ft{
+    height: 18vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+}
+@media only screen and (max-width:300px){
+    #ft p {
+        padding:0px 7px;
+        font-size: 15px;
+        }
+      
+.card{
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+ul li a{
+    
+    padding: 1px 5px;
+    margin: 10px;
+    
+    font-size: 23px;
+}
+.card a{
+    font-size: 20px;
+}
+}
+
+#ft p a{
+    text-decoration: none;
+    color: aquamarine;
 }
